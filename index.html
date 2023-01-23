@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<p id="p1">Nothing Here Yet!</p>
+
+<script>
+  npm install crypto-js
+  const key = "12345";
+  const plainText = "Hello, world!";
+  const encrypted = CryptoJS.AES.encrypt(plainText, key);
+  
+  const decrypted = CryptoJS.AES.decrypt(encrypted, key);
+  
+  
+  
+  document.getElementById("p1").innerHTML = encrypted("hello", 12345);
+</script>
+
+</body>
+</html>
